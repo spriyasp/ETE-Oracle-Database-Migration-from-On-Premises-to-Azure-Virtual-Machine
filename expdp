@@ -1,0 +1,5 @@
+expdp system/***pwd@ORCLPDB \
+directory=dp_dir \
+dumpfile=5tables.dmp \
+logfile=5tables.log \
+tables=HR.employees,HR.departments,HR.regions,HR.locations,HR.jobs,HR.countries
