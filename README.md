@@ -14,6 +14,10 @@ The solution uses Oracle Data Pump utilities to export data from the source syst
 - To simulate a real-world enterprise database migration scenario
 - To validate migrated data in the target environment
 
+## Architecture Diagram
+
+
+
 ##  Key Features
 
 - Oracle database setup using DBCA in both source and target environments
@@ -22,3 +26,4 @@ The solution uses Oracle Data Pump utilities to export data from the source syst
 - Directory object configuration for dump file handling
 - Data validation after migration
 
+ 
