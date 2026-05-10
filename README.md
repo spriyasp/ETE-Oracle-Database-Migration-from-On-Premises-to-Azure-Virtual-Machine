@@ -16,7 +16,7 @@ The solution uses Oracle Data Pump utilities to export data from the source syst
 
 ## Architecture Diagram
 
-
+![Architecture](migration.png)
 
 ##  Key Features
 
@@ -27,3 +27,18 @@ The solution uses Oracle Data Pump utilities to export data from the source syst
 - Data validation after migration
 
  
+## High level Steps 
+- Prepare source (on-prem Oracle DB, schemas, directory)
+- Export data using Data Pump (expdp)
+- Provision Azure Virtual Machine
+- Install and configure Oracle on Azure VM
+
+
+- Transfer dump file (.dmp) to Azure VM
+- Create directory and required schemas in target DB
+- Import data using Data Pump (impdp)
+- Perform post-migration fixes (users, roles, invalid objects)
+- Validate data (row counts, integrity checks)
+- Test application connectivity and performance
+- Perform final cutover to Azure VM
+- Monitor system after migration
