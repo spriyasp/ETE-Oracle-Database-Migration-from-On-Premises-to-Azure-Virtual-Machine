@@ -46,5 +46,14 @@ The solution uses Oracle Data Pump utilities to export data from the source syst
 ## Data Validation
 
 ### Onprem DB (Source) Checks:
+![DV](DataValidation/validation_source.png)
+
 
 ### Oracle VM (Target) Checks:
+![DV](DataValidation/validation_target.png)
+
+## Further Enhancements
+- Automate migration using scripts (shell/Python)
+- Use Azure Blob Storage for faster file transfer
+- Add monitoring and alerting for migration jobs
+- Perform performance tuning after migration
