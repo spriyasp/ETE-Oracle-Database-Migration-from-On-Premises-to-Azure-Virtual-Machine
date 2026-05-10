@@ -1,0 +1,6 @@
+
+impdp system/***pwd@localhost:1521/ORCLPDB1 \
+directory=dp_dir \
+dumpfile=5tables.dmp \
+logfile=import.log \
+remap_schema=HR:JERRYDB
