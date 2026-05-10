@@ -21,7 +21,7 @@ The solution uses Oracle Data Pump utilities to export data from the source syst
 ##  Key Features
 
 - Oracle database setup using DBCA in both source and target environments
-- Data export using Data Pump (expdp)
+- Data export using Data Pump (expdp) 
 - Data import using Data Pump (impdp)
 - Directory object configuration for dump file handling
 - Data validation after migration
@@ -32,7 +32,7 @@ The solution uses Oracle Data Pump utilities to export data from the source syst
 - Export data using Data Pump (expdp)
 - Provision Azure Virtual Machine
 - Install and configure Oracle on Azure VM
-
+![vm](oraclevm.png)
 
 - Transfer dump file (.dmp) to Azure VM
 - Create directory and required schemas in target DB
@@ -42,3 +42,9 @@ The solution uses Oracle Data Pump utilities to export data from the source syst
 - Test application connectivity and performance
 - Perform final cutover to Azure VM
 - Monitor system after migration
+
+## Data Validation
+
+### Onprem DB (Source) Checks:
+
+### Oracle VM (Target) Checks:
