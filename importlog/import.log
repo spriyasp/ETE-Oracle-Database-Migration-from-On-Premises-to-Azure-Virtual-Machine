@@ -1,0 +1,102 @@
+Copyright (c) 1982, 2021, Oracle and/or its affiliates. All rights reserved.
+
+Connected to:
+Oracle Database 21c Enterprise Edition Release 21.0.0.0.0 - Production
+
+Master table "SYSTEM"."SYS_IMPORT_FULL_01" successfully loaded/unloaded
+
+Starting "SYSTEM"."SYS_IMPORT_FULL_01":
+system/********@localhost:1521/ORCLPDB1
+directory=dp_dir
+dumpfile=5tables.dmp
+logfile=import.log
+remap_schema=HR:JERRYDB
+
+Processing object type TABLE_EXPORT/TABLE/TABLE
+Processing object type TABLE_EXPORT/TABLE/TABLE_DATA
+
+. . imported "JERRYDB"."EMPLOYEES"    17.28 KB   110 rows
+. . imported "JERRYDB"."LOCATIONS"     8.437 KB   23 rows
+. . imported "JERRYDB"."JOBS"          7.109 KB   19 rows
+. . imported "JERRYDB"."DEPARTMENTS"   7.125 KB   27 rows
+. . imported "JERRYDB"."COUNTRIES"     6.367 KB   25 rows
+. . imported "JERRYDB"."REGIONS"       5.546 KB   4 rows
+
+Processing object type TABLE_EXPORT/TABLE/GRANT/OWNER_GRANT/OBJECT_GRANT
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT ALTER ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT DELETE ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT INDEX ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT INSERT ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT SELECT ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT UPDATE ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT REFERENCES ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT READ ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT ON COMMIT REFRESH ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT QUERY REWRITE ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT DEBUG ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'TRAINING' does not exist
+Failing sql is:
+GRANT FLASHBACK ON "JERRYDB"."EMPLOYEES" TO "TRAINING"
+
+Processing object type TABLE_EXPORT/TABLE/COMMENT
+Processing object type TABLE_EXPORT/TABLE/AUDIT_OBJ
+Processing object type TABLE_EXPORT/TABLE/INDEX/INDEX
+Processing object type TABLE_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type TABLE_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type TABLE_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type TABLE_EXPORT/TABLE/TRIGGER
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/MARKER
+
+ORA-39082: Object type TRIGGER:"JERRYDB"."SECURE_EMPLOYEES" created with compilation warnings
+ORA-39082: Object type TRIGGER:"JERRYDB"."UPDATE_JOB_HISTORY" created with compilation warnings
+
+Job "SYSTEM"."SYS_IMPORT_FULL_01" completed with 14 error(s)
+at Wed Mar 18 18:27:01 2026
+elapsed 0 00:00:18
