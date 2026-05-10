@@ -1,0 +1,31 @@
+;;; 
+Export: Release 19.0.0.0.0 - Production on Wed Mar 18 22:28:28 2026
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Starting "SYSTEM"."SYS_EXPORT_TABLE_01":  system/********@localhost:1521/ORCLPDB directory=dp_dir dumpfile=5tables.dmp logfile=5tables.log tables=HR.employees,HR.departments,HR.regions,HR.locations,HR.jobs,HR.countries 
+Processing object type TABLE_EXPORT/TABLE/TABLE_DATA
+Processing object type TABLE_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/MARKER
+Processing object type TABLE_EXPORT/TABLE/TABLE
+Processing object type TABLE_EXPORT/TABLE/GRANT/OWNER_GRANT/OBJECT_GRANT
+Processing object type TABLE_EXPORT/TABLE/COMMENT
+Processing object type TABLE_EXPORT/TABLE/AUDIT_OBJ
+Processing object type TABLE_EXPORT/TABLE/INDEX/INDEX
+Processing object type TABLE_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type TABLE_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type TABLE_EXPORT/TABLE/TRIGGER
+. . exported "HR"."EMPLOYEES"                            17.28 KB     110 rows
+. . exported "HR"."LOCATIONS"                            8.437 KB      23 rows
+. . exported "HR"."JOBS"                                 7.109 KB      19 rows
+. . exported "HR"."DEPARTMENTS"                          7.125 KB      27 rows
+. . exported "HR"."COUNTRIES"                            6.367 KB      25 rows
+. . exported "HR"."REGIONS"                              5.546 KB       4 rows
+Master table "SYSTEM"."SYS_EXPORT_TABLE_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for SYSTEM.SYS_EXPORT_TABLE_01 is:
+  C:\DPUMP\5TABLES.DMP
+Job "SYSTEM"."SYS_EXPORT_TABLE_01" successfully completed at Wed Mar 18 22:30:34 2026 elapsed 0 00:02:04
